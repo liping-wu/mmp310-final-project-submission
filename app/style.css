@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+   
+   body {
+    font-family: "arial, helvetica, sans-serif";
+    font-size: 2em;
+    background: #ece6ad;
+   }
+   
+    #nav, #nav li ul { 
+    list-style-type:none; 
+    text-align: center;
+    }
+
+    #nav li { 
+    float:left; 
+    text-align:center; 
+    position:relative; 
+    }
+
+    #nav li a:link, #nav li a:visited { 
+    display:block; 
+    text-decoration:none; 
+    color:#fff; 
+    padding: 8px;
+    margin-left:auto;
+    width:200px; 
+    height:40px; 
+    line-height:40px; 
+    border-width:1px 1px 0 0; 
+    background: #bce6dd; 
+    padding-left:10px; 
+    }
+
+#se1,#se2,#se3{
+    display: none;
+}
+    
+    #nav li a:hover { 
+    color:#000; 
+    background:#fff; 
+    }
+
+    #nav li ul li a:hover { 
+    color:#000; 
+    background:#333;
+    }
+
+    #nav li ul { 
+    display:none; 
+    position:absolute; 
+    top:40px;
+    margin-top:1px; 
+    font-size:12px;
+    } 
+
+   table {
+    width: 120px;
+    margin: 50px auto;
+    background: #fff;
+    text-align: center;
+    border-width: 2px 0 0 2px;
+    border-color: #ece6ad;
+    border-style: solid;
+   }
+   
+   table tr td,
+   table tr th {
+    padding: 20px 40px;
+    text-align: center;
+    border-width: 0 2px 2px 0;
+    border-color: #ece6ad;
+    border-style: solid;
+   }
+   
+   table tr td.today {
+    background: #bce6dd;
+    color: #fff;
+   }

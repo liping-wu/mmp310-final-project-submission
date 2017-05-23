@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>Hmoe</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+     <header>
+        <ul id="nav"> 
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+            <a href="index.html">Home</a> 
+
+            </li> 
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+            <a href="accordion.html">Accordion</a>  
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+            <a href="calendar.html">Calendar</a> 
+            </li>
+        </ul>
+     </header>
+     </br>
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/img-1.jpg">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/img-2.jpg">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="img/img-3.jpg">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+ </body>
+
+</html>
